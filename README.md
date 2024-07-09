@@ -52,7 +52,7 @@ To measure the average number of guesses required to solve puzzles, use the simu
     python simulator/simulator.py
     ```
 
-    The simulator will run a specified number of simulations and print the average number of attempts needed to solve the puzzles.
+   The simulator will run a specified number of simulations and print the average number of attempts needed to solve the puzzles.
 
 ## Project Structure
 
