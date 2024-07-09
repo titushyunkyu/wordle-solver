@@ -68,7 +68,8 @@ To measure the average number of guesses required to solve puzzles, use the simu
     │   ├── entropy.py          # Functions for entropy calculation
     │   └── utils.py            # Utility functions
     │   └── simulator.py        # Script for running simulations
-    └──  README.md
+    ├── README.md
+    └── requirements.txt
 
 ## Contact
 For any questions or suggestions, please open an issue or contact me at hvm4sg@virginia.edu
