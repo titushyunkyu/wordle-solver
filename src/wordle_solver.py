@@ -1,4 +1,4 @@
-from utils import load_words, filter_words, get_feedback
+from utils import load_words, filter_words, get_feedback_cached
 from entropy import calc_word_score
 
 class WordleSolver:
@@ -35,7 +35,7 @@ class WordleSolver:
         while attempts < 6:
             top_guesses = self.recommend_guesses()
             guess = top_guesses[0][0]
-            feedback = get_feedback(guess, solution)
+            feedback = get_feedback_cached(guess, solution)
             attempts+=1
             if feedback == 'GGGGG':
                 return attempts
