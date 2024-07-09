@@ -1,3 +1,5 @@
+from functools import lru_cache
+
 def load_words(filepath):
     with open(filepath, 'r') as file:
         words = file.read().split()
@@ -26,9 +28,9 @@ def get_feedback(guess, answer):
 
     return ''.join(feedback)
 
+@lru_cache(maxsize=None)
+def get_feedback_cached(guess, answer):
+    return get_feedback(guess, answer)
+
 def filter_words(words, guess, feedback):
-    new_words = []
-    for word in words:
-        if get_feedback(guess, word) == feedback:
-            new_words.append(word)
-    return new_words
+    return [word for word in words if get_feedback_cached(guess, word) == feedback]
