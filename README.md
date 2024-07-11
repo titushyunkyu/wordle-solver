@@ -11,6 +11,9 @@ gain of each guess and selecting the optimal word based on combined entropy and 
   * Parallel processing for improved performance
   * Simulator to measure performance and average number of guesses required to solve the Wordle.
      - Average performance after 100 simulations: 3.42 guesses per word
+       ![image](https://github.com/titushyunkyu/wordle-solver/assets/154655165/29bb21b3-6c6e-4014-8490-dab8e83745c2)
+
+
 
 ## Installation
 1. Clone the repository:
