@@ -6,7 +6,6 @@ from wordle_solver import WordleSolver
 def main():
     wordlist_path = 'data/wordlist.txt'
     answerlist_path = 'data/answerlist.txt'
-    print
     solver = WordleSolver(wordlist_path, answerlist_path)
 
     while True:
